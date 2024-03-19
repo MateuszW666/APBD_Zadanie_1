@@ -27,6 +27,24 @@ namespace ConsoleApp
             }
             return sum / numbers.Length;
         }
+            //znajdowanie maxvalue i wyjatki
+        static int FindMaxValue(int[] numbers)
+        {
+            if (numbers == null || numbers.Length == 0)
+            {
+                throw new ArgumentException("Tablica nie może być pusta.");
+            }
+
+            int max = numbers[0];
+            foreach (int num in numbers)
+            {
+                if (num > max)
+                {
+                    max = num;
+                }
+            }
+            return max;
+        }
 
         
     }
