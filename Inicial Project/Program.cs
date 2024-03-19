@@ -21,9 +21,9 @@ namespace ConsoleApp
         {
             if (numbers.Length == 0) return 0;
             double sum = 0;
-            foreach (int number in numbers)
+            foreach (int num in numbers) //zmiena nazwy zmiennej
             {
-                sum += number;
+                sum += num;
             }
             return sum / numbers.Length;
         }
